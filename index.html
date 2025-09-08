@@ -48,20 +48,27 @@ background: linear-gradient(1deg, rgba(6, 0, 171, 1) 0%, rgba(0, 51, 255, 1) 27%
     height: 0px;
 }
 .slide{
-    height: 130px;
-    animation: slide 1s;
+    height: 115px;
+    animation: slide .2s;
 }
 @keyframes slide{
     from{
         height: 0px;
     } to{
-        height: 130px;
+        height: 115px;
     }
 }
 
 .close-slide{
     height: 0;
     animation: close-slide 1s;
+}
+
+.list-menu {
+    display: block;
+}
+.list-menu:hover{
+    background-color: rgba(255, 255, 255, 0.267);
 }
 
 </style>
@@ -82,14 +89,14 @@ background: linear-gradient(1deg, rgba(6, 0, 171, 1) 0%, rgba(0, 51, 255, 1) 27%
         </div>
     </nav>
 
-        <div style=" background: rgba(255, 255, 255, .5); border-radius: 1rem; overflow: hidden; position: absolute; width: 200px; text-align: center; transition: cubic-bezier(0.23, 1, 0.320, 1) all;" class="product-menu">
-            <div>
+        <div style=" background: rgba(255, 255, 255, .5); border-bottom-left-radius: .5rem; overflow: hidden; position: absolute; width: 200px; text-align: center; transition: cubic-bezier(0.23, 1, 0.320, 1) all; right: 0;" class="product-menu">
+            <div class="list-menu">
                 <p>lorem</p>
             </div>
-            <div>
+            <div class="list-menu">
                 <p>lorem</p>
             </div>
-            <div>
+            <div class="list-menu">
                 <p>lorem</p>
             </div>
         </div>
