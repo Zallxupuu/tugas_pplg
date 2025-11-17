@@ -76,7 +76,7 @@ body{
     margin-bottom: 3em;
     height: 34em;
     width: 100%;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -92,27 +92,46 @@ body{
     z-index: -999; 
 }
 
-.product-title h1{
-    color: white;
-    font-size: 2.4em;
-    font-family: 'Poppins-Header', sans-serif;
+.product-title{
     color: var(--third-color);
-    text-shadow: 0 0 5px var(--primary-color);
     background-color: rgba(213, 223, 224, 0.055);
     border-radius: 2em ;
     padding: 1em 1.4em;
     box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.438),inset  2px 3px 3px rgba(255, 255, 255, 0.699);
     backdrop-filter: blur(20px);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.product-title h1{
+    color: white;
+    font-size: 2.4em;
+    font-family: 'Poppins-Header', sans-serif;
+    text-shadow: 0 0 5px var(--primary-color);
 }
 
 .shine-block {
     width: 40px;
-    height: 4em;
-    background-color: #fff;
+    height: 200em;
+    background-color: #ffffffa6;
     position: absolute;
+    z-index: -3;
+    rotate: 20deg;
+    left: -50%;
+    animation: shine 6s infinite;
+    filter: blur(4px);
 }
 
 @keyframes shine {
-    
+    0% {
+        left: -50%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 120%;
+    }
 }
