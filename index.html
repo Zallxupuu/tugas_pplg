@@ -3,113 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STORE ZALL</title>
+    <title>Patriot Mayo</title>
+    <link rel="stylesheet" href="/src/style.css">
 </head>
-<!-- STYLE SECTION -->
-<style>
-html,*{
-    padding: 0;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
-
-html,body{
-    height: 100%;
-}
-body{
-    background: #0600AB;
-background: linear-gradient(1deg, rgba(6, 0, 171, 1) 0%, rgba(0, 51, 255, 1) 27%, rgba(151, 125, 255, 1) 100%);
-}
-
-.navbar-menu ul li{
-    padding: 0px .5rem;
-    font-weight: bold;
-}
-.navbar-menu ul li a:hover{
-    color: rgba(0, 51, 255, 0.445);
-}
-.navbar-menu ul li p:hover{
-    color: rgba(0, 51, 255, 0.445);
-}
-.navbar-menu ul li p{
-    color: white;
-    cursor: pointer;
-}
-.navbar-menu ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-.product-menu div{
-    padding: .5rem 0px;
-}
-.product-menu{
-    height: 0px;
-}
-.slide{
-    height: 115px;
-    animation: slide .2s;
-}
-@keyframes slide{
-    from{
-        height: 0px;
-    } to{
-        height: 115px;
-    }
-}
-
-.close-slide{
-    height: 0;
-    animation: close-slide 1s;
-}
-
-.list-menu {
-    display: block;
-}
-.list-menu:hover{
-    background-color: rgba(255, 255, 255, 0.267);
-}
-
-</style>
 
 <body>
-    <nav style="width: 100%; display: flex; justify-content: space-between; align-items: center;  padding: 1rem 0px; backdrop-filter: blur(30px); background-color: rgba(255, 255, 255, 0.178); box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.356);">
-        <div style="padding-left: 3rem; font-size: larger; color: white;">
-            <h2>ZALL STORE</h2>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div>
+            <h1 class="product_label">Patriot Mayo</h1>
         </div>
-        
-        <div class="navbar-menu">
-            <ul style="display: flex; padding: 0px .5rem; list-style: none;">
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><p onclick="displayProduct()">PRODUK &#709; </p></li>
+
+        <div class="nav-menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
         </div>
-    </nav>
+    </div>
 
-        <div style=" background: rgba(255, 255, 255, .5); border-bottom-left-radius: .5rem; overflow: hidden; position: absolute; width: 200px; text-align: center; transition: cubic-bezier(0.23, 1, 0.320, 1) all; right: 0;" class="product-menu">
-            <div class="list-menu">
-                <p>lorem</p>
-            </div>
-            <div class="list-menu">
-                <p>lorem</p>
-            </div>
-            <div class="list-menu">
-                <p>lorem</p>
-            </div>
+    <div class="main">
+        <div class="back"></div>
+        <div class="product-title">
+            <h1>Welcome to Patriot Mayo website<div class="shine-block"></div></h1>
         </div>
+    </div>
 
     <!-- SCRIPT SECTION -->
-    <script>
-// &#708;
-        
-        function displayProduct() {
-            var productMenu = document.querySelector(".product-menu")
-            productMenu.classList.toggle('slide')
-        }
-
-    </script>
+    <script src="src/script.js"></script>
 </body>
 </html>

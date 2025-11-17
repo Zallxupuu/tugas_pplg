@@ -1,0 +1,118 @@
+:root{
+    --primary-color: #7B4019;
+    --secondary-color: #FF7D29;
+    --third-color: #FFBF78;
+    --fourth-color: #FFEEA9;
+    --header-text-size: 1.4em;
+    --card-height: 34em;
+    --card-width:20em;
+}
+
+@font-face {
+    font-family: 'Poppins-Header';
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Menu';
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+
+html, *{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--third-color);
+}
+
+.navbar{
+    background-color: var(--third-color);
+    position: sticky;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 0;
+}
+
+.product_label{
+    font-family: 'Poppins-Header', sans-serif;
+    font-size: var(--header-text-size);
+    padding: 0 2em;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav-menu ul{
+    padding: 0 2em;
+    display: flex;
+    /* background: #fff; */
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 14em;
+    font-family: 'Poppins-Menu', sans-serif;
+    cursor: pointer;
+}
+
+.nav-menu ul li{
+    color: var(--primary-color);
+    transition: .2s ease-in-out all;
+    transform: translateY(0%);
+    display: block;
+    
+}
+
+.nav-menu ul li:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    animation: pop 2s;
+    transform: translateY(-20%);
+}
+
+.main{
+    margin-bottom: 3em;
+    height: 34em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    width: 100%;
+    position: absolute;
+    height: 34em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/Risol-MayozTribun-Jakarta-Tribunnewscom.jpg);
+    mask-image: linear-gradient(to top, transparent, black 20%, black 80%, transparent);
+    z-index: -999; 
+}
+
+.product-title h1{
+    color: white;
+    font-size: 2.4em;
+    font-family: 'Poppins-Header', sans-serif;
+    color: var(--third-color);
+    text-shadow: 0 0 5px var(--primary-color);
+    background-color: rgba(213, 223, 224, 0.055);
+    border-radius: 2em ;
+    padding: 1em 1.4em;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.438),inset  2px 3px 3px rgba(255, 255, 255, 0.699);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}
+
+.shine-block {
+    width: 40px;
+    height: 4em;
+    background-color: #fff;
+    position: absolute;
+}
+
+@keyframes shine {
+    
+}
